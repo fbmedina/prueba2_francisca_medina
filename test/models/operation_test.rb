@@ -1,7 +1,11 @@
 require 'test_helper'
 
 class OperationTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @o = operations(:one)
+  end
+
+  test 'obtain responsible worker operation' do
+    
+  end
 end
