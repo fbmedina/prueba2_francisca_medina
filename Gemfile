@@ -46,6 +46,8 @@ group :development, :test do
   gem 'byebug'
 
   gem 'sqlite3'
+
+  gem 'railroady'
 end
 
 group :development do
