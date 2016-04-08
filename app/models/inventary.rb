@@ -5,5 +5,6 @@ class Inventary < ActiveRecord::Base
 
   private
     def register_deleted_item
+      Register.create(description: 'La pieza con serial #{self.serial_number} ha sido borrada')
     end
 end
