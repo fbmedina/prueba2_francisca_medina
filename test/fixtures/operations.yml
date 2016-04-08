@@ -1,7 +1,10 @@
 # Read about fixtures at http://api.rubyonrails.org/classes/ActiveRecord/FixtureSet.html
 
 one:
-  worker_id: 
+  worker: one
 
 two:
-  worker_id: 
+  worker: one
+
+three:
+  worker: two

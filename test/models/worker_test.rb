@@ -9,4 +9,7 @@ class WorkerTest < ActiveSupport::TestCase
     @w.name = nil
     assert @w.invalid?, 'worker needs to require name'
   end
+
+  test '' do
+  end
 end
