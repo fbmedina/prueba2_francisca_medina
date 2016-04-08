@@ -1,7 +1,12 @@
 require 'test_helper'
 
 class WorkerTest < ActiveSupport::TestCase
-  # test "the truth" do
-  #   assert true
-  # end
+  def setup
+    @w = workers(:one)
+  end
+
+  test 'invalid without name' do
+    @w.name = nil
+    assert @w.invalid?, 'worker needs to require name'
+  end
 end
