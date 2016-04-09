@@ -6,6 +6,6 @@ class OperationTest < ActiveSupport::TestCase
   end
 
   test 'obtain responsible worker operation' do
-    assert_equal @o.worker, worker(:one), 'operation and worker are equal'
+    assert_equal @o.worker, worker(:one), 'operation worker and worker are equal'
   end
 end
